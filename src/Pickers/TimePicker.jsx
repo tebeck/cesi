@@ -4,7 +4,7 @@ import { FormControl, FormControlLabel, Radio, FormLabel, RadioGroup, Select } f
 
 import { withRouter } from 'react-router-dom'
 
-function TimePicker(props) {
+function CustomTimePicker(props) {
   const handleChangeAppointmentSlot = (e) => {
     props.setAppointmentSlot(e.target.value)
     props.handleNextStep()
@@ -49,4 +49,4 @@ function TimePicker(props) {
   )
 }
 
-export default withRouter(TimePicker)
+export default withRouter(CustomTimePicker)

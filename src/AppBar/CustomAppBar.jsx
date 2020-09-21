@@ -20,7 +20,7 @@ import MailIcon from '@material-ui/icons/Mail'
 import ClickAwayListener from '@material-ui/core/ClickAwayListener'
 import { appbarStyle } from '../Styles/makeStyles'
 
-export default function PersistentDrawerLeft() {
+export default function CustomAppBar(props) {
   const classes = appbarStyle()
   const theme = useTheme()
   const [open, setOpen] = React.useState(false)
@@ -53,7 +53,7 @@ export default function PersistentDrawerLeft() {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" noWrap>
-              Centro de Estetica San Isidro
+              {props.title}
             </Typography>
           </Toolbar>
         </AppBar>

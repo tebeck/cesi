@@ -1,6 +1,7 @@
 import { createMuiTheme } from '@material-ui/core/styles'
+import { red } from '@material-ui/core/colors'
 
-const theme = createMuiTheme({
+export const lightTheme = createMuiTheme({
   palette: {
     // primary: { main: '#00695f' },
     // secondary: { main: '#14a37f' },
@@ -10,6 +11,9 @@ const theme = createMuiTheme({
     // success: { main: Colors.success }
     primary: { main: '#2196f3' },
     secondary: { main: '#f50057' },
+    background: {
+      default: '#fff',
+    },
   },
   typography: {
     fontFamily: [
@@ -43,4 +47,25 @@ const theme = createMuiTheme({
   },
 })
 
-export default theme
+// Admin theme
+export const darkTheme = createMuiTheme({
+  palette: {
+    type: 'dark',
+
+    primary: {
+      main: '#2196f3',
+    },
+    secondary: {
+      main: '#f50057',
+    },
+    textSecondary: {
+      main: 'rgba(255, 255, 255, 0.7)',
+    },
+    error: {
+      main: red.A400,
+    },
+    background: {
+      default: '#121212',
+    },
+  },
+})

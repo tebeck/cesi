@@ -17,7 +17,7 @@ import DatePicker from './Pickers/DatePicker'
 import TimePicker from './Pickers/TimePicker'
 import AlertDialog from './AlertDialog'
 
-export default function HorizontalNonLinearAlternativeLabelStepper() {
+export default function CustomStepper() {
   const [activeStep, setActiveStep] = React.useState(0)
   const [appointmentDate, setAppointmentDate] = React.useState()
   const [appointmentMeridiem, setAppointmentMeridiem] = React.useState(0)
