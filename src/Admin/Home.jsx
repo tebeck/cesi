@@ -5,7 +5,7 @@ export default function AdminHome() {
   return (
     <div>
       <CustomAppBar title="Centro de Estetica San Isidro" />
-      asd
+      Home Page
     </div>
   )
 }
